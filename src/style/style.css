@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "Hobo Std";
+    src: url(../assets/HoboStd.woff) format('woff');
+}
+body{
+    background: #FFFFEC;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+h1,h2,h3{
+    font-family: "Hobo Std";
+    letter-spacing: 5%;
+    color: #8C8C8C;
+    line-height: 150%;
+}
+p{
+    font-family: "Nunito";
+    line-height: 150%;
+    color: #8C8C8C;
+    letter-spacing: 0.05em;
+}
+section#hero nav{
+    
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    justify-content: space-between;
+}
+section#hero nav ul{
+    display: flex;
+    border: 1px solid black;
+    height: fit-content;
+    width: 50%;
+    justify-content: space-between;
+}
+section#hero nav ul li{
+    list-style: none;
+}
+section#hero nav ul li:nth-child(1){
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+}
+section#hero nav ul li:nth-child(1) img{
+    margin-left: 5px;
+}
+section#hero nav ul li p{
+    font-size: 18px;
+    font-weight: 600;
+}
+section#hero nav ul li button{
+    font-size: 18px;
+    padding: 15px 35px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    background: linear-gradient(282.86deg, #FF537C -27.78%, #FFB0C3 136.7%);
+}
