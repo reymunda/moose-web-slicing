@@ -48,7 +48,7 @@ section#hero nav ul li:nth-child(1) img{
     margin-left: 5px;
 }
 section#hero nav ul li p{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
 }
 section#hero nav ul li button{
@@ -78,8 +78,8 @@ section#hero .hero-content .hero-heading h1 span{
     color: #2DB9F5;
 }
 section#hero .hero-content .hero-heading p{
-    font-size: 20px;
-    width: 60%;
+    font-size: 18px;
+    width: 50%;
 }
 section#hero .hero-content .hero-heading button{
     padding: 20px 40px;
@@ -139,7 +139,7 @@ section#hero .hero-content .hero-illustration .stat{
 section#hero .hero-content .hero-illustration .stat img{
     margin: 35px;
 }
-section#hero .hero-content .hero-illustration .stat h1{
+section#hero .hero-content .hero-illustration .stat h3{
     color: #FF537C;
     text-align: center;
     margin: 0;
@@ -149,4 +149,65 @@ section#hero .hero-content .hero-illustration .stat h1{
 section#hero .hero-content .hero-illustration .stat p{
     margin-top: 15px;
     font-size: 18px;
+}
+section#moose-overview{
+    margin-top: 150px;
+}
+section#moose-overview .definition{
+    display: flex;
+}
+section#moose-overview .definition h2{
+    flex: 1.15;
+    font-size: 40px;
+    letter-spacing: 0.05em;
+}
+section#moose-overview .definition p{
+    flex: 1;
+}
+section#moose-overview .feature{
+    margin-top: 80px;
+    position: relative;
+}
+section#moose-overview .feature .pink-land{
+    position: relative;
+    width: 100%;
+    margin-top: 250px;
+    height: 300px;
+    background-color: #FFB0C3;
+    border-radius: 0px 0px 40px 40px;
+    box-sizing: border-box;
+    padding: 0 60px;
+
+}
+section#moose-overview .feature .card-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+    bottom: 70%;
+}
+section#moose-overview .feature .card-container .card{
+    width: 320px;
+    height: 420px;
+    box-sizing: border-box;
+    padding: 25px 15px 25px 25px;
+    border-radius: 15px;
+    border: 20px solid #FFFFEC;
+}
+section#moose-overview .feature .card h3,section#moose-overview .feature .card-container .card p{
+    color: white;
+}
+section#moose-overview .feature .card-container .card.pink{
+    background: linear-gradient(180deg, #FFBDCD 5.56%, #FF95AF 54.75%, #FF7294 100%);
+}
+section#moose-overview .feature .card-container .card.blue{
+    background: linear-gradient(180deg, #CAEFFF 7.58%, #6AA2E3 91.61%);
+}
+section#moose-overview .feature .card-container .card.green{
+    background: linear-gradient(180deg, #B7FFBE 6.44%, #81BF87 93.67%);
+}
+section#moose-overview .feature .card-container .card h3{
+    font-size: 26px;
+    letter-spacing: 0.1em;
+    line-height: 150%;
 }
