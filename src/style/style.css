@@ -17,7 +17,7 @@ h1,h2,h3{
 p{
     font-family: "Nunito";
     line-height: 150%;
-    font-size: 18px;
+    font-size: 20px;
     color: #8C8C8C;
     letter-spacing: 0.05em;
 }
@@ -78,8 +78,8 @@ section#hero .hero-content .hero-heading h1 span{
     color: #2DB9F5;
 }
 section#hero .hero-content .hero-heading p{
-    font-size: 18px;
-    width: 50%;
+    font-size: 20px;
+    width: 60%;
 }
 section#hero .hero-content .hero-heading button{
     padding: 20px 40px;
@@ -162,7 +162,7 @@ section#moose-overview .definition h2{
     letter-spacing: 0.05em;
 }
 section#moose-overview .definition p{
-    flex: 1;
+    flex: 1.25;
 }
 section#moose-overview .feature{
     margin-top: 80px;
@@ -210,4 +210,45 @@ section#moose-overview .feature .card-container .card h3{
     font-size: 26px;
     letter-spacing: 0.1em;
     line-height: 150%;
+}
+section#apps{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+    align-items: center;
+}
+
+section#apps div.apps-logo{
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+}
+section#apps div.apps-logo img{
+    transform: scale(0.95);
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+section#apps div.apps-monitored{
+    width: 40%;
+}
+section#apps div.apps-monitored h2{
+    font-size: 40px;
+    margin-top: 0;
+    letter-spacing: 0.05em;
+}
+section#apps div.apps-monitored button{
+    padding: 20px 40px;
+    background: linear-gradient(282.86deg, #FF537C -27.78%, #FFB0C3 136.7%);
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 25px 0px #FF92AC;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+section#apps div.apps-monitored button p{
+    letter-spacing: 0.05em;
 }
