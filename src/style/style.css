@@ -14,7 +14,7 @@ h1,h2,h3{
     color: #8C8C8C;
     line-height: 150%;
 }
-p{
+p,li{
     font-family: "Nunito";
     line-height: 150%;
     font-size: 20px;
@@ -266,8 +266,51 @@ section#moose-works h2{
 }
 section#moose-works p{
     margin-top: 0;
-    width: 50%;
 }
+section#pricing-plan h2{
+    font-size: 40px;
+}
+section#pricing-plan .card-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+section#pricing-plan .card-container .card{
+    width: 320px;
+    height: 475px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 30px 30px;
+    border-radius: 15px;
+    border: 2px solid #8C8C8C;
+}
+section#pricing-plan .card-container .card p{
+    font-size: 24px;
+    color: #FF537C;
+    font-weight: 600;
+}
+section#pricing-plan .card-container .card h3{
+    font-size: 26px;
+}
+section#pricing-plan .card-container .card button{
+    font-size: 18px;
+    padding: 20px 35px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+    background: linear-gradient(282.86deg, #FF537C -27.78%, #FFB0C3 136.7%);
+    box-shadow: 0px 0px 25px 0px #FF92AC;
+}
+section#faq{
+    padding-top: 150px;
+}
+
 /*
   Player Skin Designer for Video.js
   http://videojs.com
@@ -361,4 +404,3 @@ section#moose-works p{
     /* Otherwise we'll rely on stacked opacities */
     background: rgba(lighten(#ff537c, 33%), 0.75);
   }
-  
