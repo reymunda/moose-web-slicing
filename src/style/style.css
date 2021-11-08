@@ -309,8 +309,83 @@ section#pricing-plan .card-container .card button{
 }
 section#faq{
     padding-top: 150px;
+    display: flex;
+}
+section#faq div.desc,section#faq div.question-answer{
+    border: 1px solid black;
+    flex: 1;
+} 
+section#faq div.desc h2{
+    font-size: 40px;
+    margin: 0;
+}
+section#faq div.desc p{
+    width: 80%;
+}
+section#faq div.desc img{
+    transform: scale(0.9);
+    position: relative;
+    left: -27px;
+}
+section#faq div.question-answer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
 }
 
+section#faq div.question-answer div.toggle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    /* border: 1px solid black; */
+}
+section#faq div.question-answer div.toggle img{
+    cursor: pointer;
+}
+section#faq div.question-answer div.toggle div.indicator-container{
+    display: flex;
+}
+section#faq div.question-answer div.toggle div.indicator-container div{
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    background-color: #8C8C8C80;
+    border-radius: 50%;
+}
+
+section#faq div.question-answer div.toggle div.indicator-container div.toggle-selected{
+    background-color: #FF537C;   
+}
+section#faq div.question-answer .question{
+    width: 90%;
+    flex: 1;
+    box-sizing: border-box;
+    padding-top: 30px;
+    /* border: 1px solid red; */
+}
+section#faq div.question-answer .question .question-bar{
+    padding: 10px;
+    border: 2px solid #8C8C8C;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+section#faq div.question-answer .question .question-bar .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+section#faq div.question-answer .question .question-bar .title img{
+    /* border: 1px solid black; */
+    height: fit-content;
+}
+section#faq div.question-answer .question .question-bar .title p{
+    /* border: 1px solid black; */
+    margin: 0;
+}
 /*
   Player Skin Designer for Video.js
   http://videojs.com
