@@ -17,7 +17,7 @@ h1,h2,h3{
 p,li{
     font-family: "Nunito";
     line-height: 150%;
-    font-size: 20px;
+    font-size: 18px;
     color: #8C8C8C;
     letter-spacing: 0.05em;
 }
@@ -310,6 +310,7 @@ section#pricing-plan .card-container .card button{
 section#faq{
     padding-top: 150px;
     display: flex;
+    margin-bottom: 150px;
 }
 section#faq div.desc,section#faq div.question-answer{
     border: 1px solid black;
@@ -385,6 +386,16 @@ section#faq div.question-answer .question .question-bar .title img{
 section#faq div.question-answer .question .question-bar .title p{
     /* border: 1px solid black; */
     margin: 0;
+}
+section#faq div.question-answer .question .question-bar .description{
+    font-size: 16px;
+    display: none;
+}
+section#faq div.question-answer .question .question-bar.active  .description{
+    display: block;
+}
+section#faq div.question-answer .question .question-bar.active .dropdown{
+    transform: rotate(180deg);
 }
 /*
   Player Skin Designer for Video.js

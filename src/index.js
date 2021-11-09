@@ -1,7 +1,23 @@
 import 'video.js/dist/video-js.css';
 import videoJs from 'video.js/dist/video.js';
 import './style/style.css';
-console.log("testing");
+
+let questionBar = document.querySelectorAll('.question-bar');
+
+questionBar.forEach(e => {
+  e.addEventListener('click',() => {
+    if(!e.classList.contains('active')){
+      questionBar.forEach(e => {
+        if(e.classList.contains('active')){
+          e.classList.remove('active');
+        } 
+      })  
+    }
+        // let questionDesc = e.childNodes[3];            
+
+      e.classList.toggle('active');
+  })
+})
 
 const player = videoJs("my_video_1");
 $(function(){
