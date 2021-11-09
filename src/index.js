@@ -3,10 +3,12 @@ import videoJs from 'video.js/dist/video.js';
 import './style/style.css';
 
 let questionBar = document.querySelectorAll('.question-bar'),
-    prevToggleButton = document.querySelector('.prev'),
-    nextToggleButton = document.querySelector('.next'),
-    toggleIndicator = document.querySelectorAll('.indicator'),
-    activeIndicator;
+prevToggleButton = document.querySelector('.prev'),
+nextToggleButton = document.querySelector('.next'),
+toggleIndicator = document.querySelectorAll('.indicator'),
+questionSection = document.querySelector('.question-container'),
+translate = 0,
+activeIndicator;
 
 questionBar.forEach(e => {
   e.addEventListener('click',() => {
@@ -27,11 +29,20 @@ nextToggleButton.addEventListener('click', () => {
       if(e.classList.contains('toggle-selected')){
         activeIndicator = e;
       }
+      if(questionSection.classList.contains('next')){
+        questionSection.classList.remove('next');
+      }
       // activeIndicator.nextElementSibling.classList.add('toggle-selected');
     })
     if(activeIndicator.nextElementSibling != null){
+
       activeIndicator.classList.remove('toggle-selected');
       activeIndicator.nextElementSibling.classList.add('toggle-selected');
+      translate -= 25;
+      questionSection.style.transform = `translateX(${translate}%)`;
+      // setTimeout(() => {
+        //   questionSection.classList.remove('next');
+        // },1000)
     }
 });
 
@@ -45,8 +56,11 @@ prevToggleButton.addEventListener('click',() => {
   if(activeIndicator.previousElementSibling != null){
     activeIndicator.classList.remove('toggle-selected');
     activeIndicator.previousElementSibling.classList.add('toggle-selected');
+    translate += 25;
+    questionSection.style.transform = `translateX(${translate}%)`;
   }
 })
+
 const player = videoJs("my_video_1");
 $(function(){
     var $refreshButton = $('#refresh');

@@ -333,6 +333,7 @@ section#faq div.question-answer{
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
+    position: relative;
 }
 
 section#faq div.question-answer div.toggle{
@@ -360,17 +361,32 @@ section#faq div.question-answer div.toggle div.indicator-container div.toggle-se
     background-color: #FF537C;   
 }
 section#faq div.question-answer .question{
-    width: 90%;
     flex: 1;
     box-sizing: border-box;
+    overflow-x: hidden;
     padding-top: 30px;
+    width: 100%;
     /* border: 1px solid red; */
+    border: 1px solid black;
+}
+section#faq div.question-answer .question .question-container{
+    display: flex;
+    width: 400%;
+    transition: 1s;
+}
+section#faq div.question-answer .question .question-sec{
+    border: 1px solid black;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 section#faq div.question-answer .question .question-bar{
     padding: 10px;
     border: 2px solid #8C8C8C;
     border-radius: 8px;
     margin-bottom: 25px;
+    width: 85%;
     cursor: pointer;
 }
 section#faq div.question-answer .question .question-bar .title{
