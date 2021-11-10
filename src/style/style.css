@@ -8,18 +8,21 @@ body{
     padding-right: 70px;
     overflow-x: hidden;
 }
-h1,h2,h3{
+h1,h2,h3,h4{
     font-family: "Hobo Std";
     letter-spacing: 0.05em;
     color: #8C8C8C;
     line-height: 150%;
 }
-p,li{
+p,li,a{
     font-family: "Nunito";
     line-height: 150%;
     font-size: 18px;
     color: #8C8C8C;
     letter-spacing: 0.05em;
+}
+a{
+    text-decoration: none;
 }
 section#hero nav{
     
@@ -441,6 +444,50 @@ section#faq div.question-answer .question .question-bar.active  .description{
 }
 section#faq div.question-answer .question .question-bar.active .dropdown{
     transform: rotate(180deg);
+}
+hr{
+    position: absolute;
+    width: 100%;
+    right:0;
+    left: 0;
+}
+footer{
+    margin-top: 225px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+footer h3{
+    font-size: 32px;
+}
+footer h4{
+    font-size: 24px;
+}
+footer div.col{
+
+}
+footer div.col h3, footer div.col h4{
+    margin-top: 0;
+}
+footer div.col.brand{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+}
+footer div.col.navigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer div.col.navigation h4{
+    margin-bottom: 0;
+}
+footer div.col.social-media .row{
+    margin-bottom: 25px;
+}
+footer div.col.social-media .row img:nth-child(1){
+    margin-right: 25px;
 }
 /*
   Player Skin Designer for Video.js
