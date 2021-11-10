@@ -4,7 +4,7 @@ import './style/style.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-AOS.init();
+AOS.init({});
 
 let questionBar = document.querySelectorAll('.question-bar'),
     prevToggleButton = document.querySelector('.prev'),
