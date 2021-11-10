@@ -533,6 +533,9 @@ footer div.col.navigation{
 footer div.col.navigation h4{
     margin-bottom: 0;
 }
+footer a:active{
+    opacity: 0.5;
+}
 footer div.col.social-media .row{
     margin-bottom: 25px;
 }
