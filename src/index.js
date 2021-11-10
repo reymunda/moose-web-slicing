@@ -1,6 +1,10 @@
 import 'video.js/dist/video-js.css';
 import videoJs from 'video.js/dist/video.js';
 import './style/style.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 let questionBar = document.querySelectorAll('.question-bar'),
     prevToggleButton = document.querySelector('.prev'),
