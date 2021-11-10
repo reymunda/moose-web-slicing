@@ -3,12 +3,13 @@ import videoJs from 'video.js/dist/video.js';
 import './style/style.css';
 
 let questionBar = document.querySelectorAll('.question-bar'),
-prevToggleButton = document.querySelector('.prev'),
-nextToggleButton = document.querySelector('.next'),
-toggleIndicator = document.querySelectorAll('.indicator'),
-questionSection = document.querySelector('.question-container'),
-translate = 0,
-activeIndicator;
+    prevToggleButton = document.querySelector('.prev'),
+    nextToggleButton = document.querySelector('.next'),
+    toggleIndicator = document.querySelectorAll('.indicator'),
+    questionSection = document.querySelector('.question-container'),
+    dropdown = document.querySelector('section#hero nav ul li:nth-child(1)'),
+    translate = 0,
+    activeIndicator;
 
 questionBar.forEach(e => {
   e.addEventListener('click',() => {
@@ -59,6 +60,10 @@ prevToggleButton.addEventListener('click',() => {
     translate += 25;
     questionSection.style.transform = `translateX(${translate}%)`;
   }
+})
+
+dropdown.addEventListener('click',()=>{
+  dropdown.children[1].classList.toggle('active');
 })
 
 const player = videoJs("my_video_1");

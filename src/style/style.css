@@ -2,6 +2,9 @@
     font-family: "Hobo Std";
     src: url(../assets/HoboStd.woff) format('woff');
 }
+*{
+    scroll-behavior: smooth;
+}
 body{
     background: #FFFFEC;
     padding-left: 70px;
@@ -25,7 +28,6 @@ a{
     text-decoration: none;
 }
 section#hero nav{
-    
     display: flex;
     align-items: center;
     /* border: 1px solid black; */
@@ -42,15 +44,63 @@ section#hero nav ul{
 section#hero nav ul li{
     list-style: none;
 }
+section#hero nav ul li:active > a, section#hero nav ul li:active > p{
+    opacity: 0.5;
+}
 section#hero nav ul li:nth-child(1){
     display: flex;
     align-items: center;
+    position: relative;
+    cursor: pointer;
     /* border: 1px solid black; */
+}
+section#hero nav ul li:nth-child(1) .dropdown-content{
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: -88px;
+    width: 220px;
+    height: 170px;
+    z-index: 3;
+    border: 1px solid #FF92AC;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 25px;
+    background-color: white;
+    box-shadow: 0px 4px 15px 0px #FFB0C34D;
+    transition: 0.5s;
+}
+section#hero nav ul li:nth-child(1) .dropdown-content ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+    width: 160px;
+    padding: 0;
+}
+section#hero nav ul li:nth-child(1) .dropdown-content ul li{
+    cursor: pointer;
+    padding: 5px;
+    width: 100%;
+}
+section#hero nav ul li:nth-child(1) .dropdown-content ul li:hover{
+    background-color: #ff537c;
+}
+section#hero nav ul li:nth-child(1) .dropdown-content ul li:hover > a{
+    color: white;
 }
 section#hero nav ul li:nth-child(1) img{
     margin-left: 5px;
+    transition: 0.5s;
 }
-section#hero nav ul li p{
+section#hero nav ul li:nth-child(1) img.active{
+    transform: rotate(180deg);
+}
+section#hero nav ul li:nth-child(1) img.active + .dropdown-content{
+    display: block;
+}
+section#hero nav ul li a, section#hero nav ul li p{
     font-size: 18px;
     font-weight: 600;
 }
