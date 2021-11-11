@@ -428,7 +428,7 @@ section#faq div.question-answer div.toggle img{
     cursor: pointer;
 }
 section#faq div.question-answer div.toggle img:active{
-    opacity: 0.75s;
+    opacity: 0.75;
 }
 section#faq div.question-answer div.toggle div.indicator-container{
     display: flex;
